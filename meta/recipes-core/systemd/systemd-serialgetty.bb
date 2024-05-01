@@ -9,8 +9,7 @@ SERIAL_TERM ?= "linux"
 
 SRC_URI = "file://serial-getty@.service"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 # As this package is tied to systemd, only build it when we're also building systemd.
 inherit features_check

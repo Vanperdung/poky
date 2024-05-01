@@ -26,8 +26,7 @@ ICECC_DISABLED = "1"
 PATCHTOOL = "patch"
 SRC_URI = "file://icecc-create-env"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}/${bindir}

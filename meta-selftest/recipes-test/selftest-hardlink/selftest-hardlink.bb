@@ -6,8 +6,7 @@ SRC_URI = "file://hello.c \
            file://gdb.sh \
 "
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 do_compile () {
 	${CC} hello.c -o hello1 ${CFLAGS} ${LDFLAGS}

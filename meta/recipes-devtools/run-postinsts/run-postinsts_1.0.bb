@@ -8,8 +8,7 @@ SRC_URI = "file://run-postinsts \
            file://run-postinsts.init \
            file://run-postinsts.service"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 inherit allarch systemd update-rc.d
 

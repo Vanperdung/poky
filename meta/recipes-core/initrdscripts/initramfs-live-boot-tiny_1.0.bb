@@ -5,8 +5,8 @@ DEPENDS = "virtual/kernel"
 RDEPENDS:${PN} = "busybox-mdev"
 SRC_URI = "file://init-live.sh"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+
+S = "${WORKDIR}"
 
 do_install() {
         install -m 0755 ${S}/init-live.sh ${D}/init

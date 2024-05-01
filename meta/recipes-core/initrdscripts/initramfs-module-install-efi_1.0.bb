@@ -7,8 +7,7 @@ RRECOMMENDS:${PN} = "${VIRTUAL-RUNTIME_base-utils-syslog}"
 
 SRC_URI = "file://init-install-efi.sh"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}/init.d

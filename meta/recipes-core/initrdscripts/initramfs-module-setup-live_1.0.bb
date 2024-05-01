@@ -9,8 +9,7 @@ inherit allarch
 FILESEXTRAPATHS:prepend := "${THISDIR}/initramfs-framework:"
 SRC_URI = "file://setup-live"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}/init.d

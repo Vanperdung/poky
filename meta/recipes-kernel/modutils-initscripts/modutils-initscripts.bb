@@ -4,8 +4,8 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://modutils.sh;beginline=3;endline=3;md5=b2dccaa94b3629a08bfb4f983cad6f89"
 SRC_URI = "file://modutils.sh"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+
+S = "${WORKDIR}"
 
 INITSCRIPT_NAME = "modutils.sh"
 INITSCRIPT_PARAMS = "start 06 S ."

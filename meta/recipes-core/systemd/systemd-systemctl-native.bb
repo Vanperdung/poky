@@ -8,8 +8,7 @@ inherit native
 
 SRC_URI = "file://systemctl"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${WORKDIR}"
 
 do_install() {
 	install -d ${D}${bindir}

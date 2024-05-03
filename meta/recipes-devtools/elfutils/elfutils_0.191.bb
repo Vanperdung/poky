@@ -31,7 +31,7 @@ SRC_URI[sha256sum] = "df76db71366d1d708365fc7a6c60ca48398f14367eb2b8954efc889714
 
 inherit autotools gettext ptest pkgconfig
 
-EXTRA_OECONF = "--program-prefix=eu-"
+EXTRA_OECONF = "--program-prefix=eu- --disable-demangler"
 
 # Only used at runtime for make check but we want deterministic makefiles for ptest so hardcode
 CACHED_CONFIGUREVARS += "ac_cv_prog_HAVE_BUNZIP2=yes"
